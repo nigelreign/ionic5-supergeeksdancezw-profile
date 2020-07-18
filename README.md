@@ -1,11 +1,13 @@
-## ionic 5 Supergeeks Dance Crew Profile Application - Mobile And Web App UI.
+# ionic 5 Supergeeks Dance Crew Profile Application - Mobile And Web App UI.
 
-# Interface was done using Ionic and Angular Framework
+## Interface was done using Ionic and Angular Framework
 
-## Screenshots
+### Screenshots
+![supergeeks](https://user-images.githubusercontent.com/37867005/87850425-75a9f400-c8f0-11ea-8974-22a1b151d2ca.PNG)
 
 
-## Prerequisite:
+### How to run the project:
+Steps
 1. Node.js to be installed.
 2. Ionic cli:
 ```
@@ -23,10 +25,7 @@ npm install
 ```
 ionic serve
 ```
-5. That's it, enjoy.
 
-###### Thank you.
+**Nigel Reign**
 
-**Note that I am not responsible for any misuse of any of my examples.**
-
-> Habib AlMawali :smirk_cat:
+Curtesy to >Habib AlMawali
