@@ -1,4 +1,4 @@
-# ionic 5 Supergeeks Dance Crew Profile Application - Mobile And Web App UI.
+# ionic 5 Supergeeks Dance Crew Profile - Mobile And Web App UI.
 
 ## Interface was done using Ionic and Angular Framework
 
@@ -27,5 +27,3 @@ ionic serve
 ```
 
 **Nigel Reign**
-
-Curtesy to >Habib AlMawali
