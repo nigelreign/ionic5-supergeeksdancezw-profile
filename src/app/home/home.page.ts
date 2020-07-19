@@ -9,4 +9,9 @@ export class HomePage {
 
   constructor() {}
 
+  options = {
+    loop: true,
+    spaceBetween: 80,
+  };
+
 }

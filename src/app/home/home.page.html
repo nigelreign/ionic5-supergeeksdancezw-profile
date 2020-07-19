@@ -1,20 +1,152 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-icon slot="end" name="grid-outline"></ion-icon>
+      </ion-buttons>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-buttons>
+        <ion-icon slot="start" name="search"></ion-icon>
+      </ion-buttons>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-segment scrollable value="1">
+    <ion-segment-button value="1">
+      <ion-label>All</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      <ion-label>Competitions</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="3">
+      <ion-label>Performances</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="4">
+      <ion-label>Viral Videos</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-padding">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-badge color="lightprimary">Pictures</ion-badge>
+        </ion-col>
+        <ion-col size="6">
+          <ion-badge color="lightprimary">Videos</ion-badge>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
+
+  <ion-slides [options]="options">
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+
+            <img class="poster" src="../../assets/geek3.jpeg" alt="" />
+
+          </ion-col>
+          <ion-col size="12">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-subtitle>PERFORMANCE</ion-card-subtitle>
+                <ion-card-title>MTV Shuga</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                MTV Shuga is a multi-channel campaign focusing on positive sexual health messaging for the youth. We had the opportunity to be vessels of this message by performing at the screening of the
+                prestigious <b>MTV Shuga</b>
+                <br>
+                <a href="">WATCH THE VIDEO</a>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <img class="poster" src="../../assets/geek4.jpeg" alt="" />
+          </ion-col>
+          <ion-col size="12">
+            <h5 class="ion-no-margin">Shooting AfroTwerk DanceChallenge</h5>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <img class="poster" src="../../assets/geek5.jpeg" alt="" />
+          </ion-col>
+          <ion-col size="12">
+            <h5 class="ion-no-margin">Wedding Perfomance</h5>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <img class="poster" src="../../assets/geek6.jpeg" alt="" />
+          </ion-col>
+          <ion-col size="12">
+            <h5 class="ion-no-margin">From National Foods Product Launch</h5>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <img class="poster" src="../../assets/geek7.jpeg" alt="" />
+          </ion-col>
+          <ion-col size="12">
+            <h5 class="ion-no-margin">Celebrating Africa Day</h5>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <img class="poster" src="../../assets/geek9.jpeg" alt="" />
+          </ion-col>
+          <ion-col size="12">
+            <h5 class="ion-no-margin">Art Gallery Friday Night</h5>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-tabs>
+    <ion-tab-bar slot="">
+      <ion-tab-button tab="whatsapp">
+        <ion-icon class="whatsapp-icon social-icons" name="logo-whatsapp"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="facebook">
+        <ion-icon class="facebook-icon social-icons" name="logo-facebook"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="instagram">
+        <ion-icon class="instagram-icon social-icons" name="logo-instagram"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="twitter">
+        <ion-icon class="twitter-icon social-icons" name="logo-twitter"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
 </ion-content>

@@ -1,27 +1,84 @@
-#container {
-  text-align: center;
+ion-segment {
+  margin: 0 10px;
+}
 
+ion-segment-button {
+  text-transform: capitalize;
+  transform: scale(.8, .8);
+  --indicator-color: transperant;
+  color: #969696;
+
+  ion-label {
+    position: relative;
+    left: -17px;
+    font-weight: bolder;
+  }
+}
+
+.segment-button-checked {
+  color: #333;
+}
+
+.segment-button-checked :before {
+  content: "";
   position: absolute;
   left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0;
+  width: 50%;
+  border-bottom: 4px solid #333;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
+ion-badge {
+  padding: 8px 0;
+  border-radius: 18px;
   color: #8c8c8c;
-
-  margin: 0;
+  border: 1px solid #8c8c8c;
+  width: 100%;
+  text-align: center;
 }
 
-#container a {
-  text-decoration: none;
+.poster-col {
+  height: 200px;
+
+  img {
+    border-radius: 40px;
+  }
+}
+
+.social-icons {
+  font-size: 60px;
+}
+
+.facebook-icon {
+  color: #3e5b99;
+}
+
+.instagram-icon {
+  color: #ef4f48;
+}
+
+.twitter-icon {
+  color: #00acee;
+}
+
+.whatsapp-icon {
+  color: #4FCE5D;
+}
+
+h5 {
+  margin-top: 4px;
+}
+
+.swiper-slide-prev {
+  opacity: .5;
+  transform: rotate(-8deg);
+}
+
+.swiper-slide-next {
+  opacity: .5;
+  transform: rotate(8deg);
+}
+
+.swiper-slide {
+  transition: .4s all;
 }
